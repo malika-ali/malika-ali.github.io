@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'ChicagoFLF'; 
+    src: url(/fonts/ChicagoFLF.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'ChildWriting'; 
+    src: url(/fonts/ChildWriting.ttf) format('truetype');
+}
+
+body {
+    background-image: url(/assets/smooth-wooden-texture.jpg);
+    background-size: cover;
+}
+
+.header {
+    margin: 0px auto;
+    justify-content: center;
+    vertical-align: middle;
+    width: 700px;
+    background-color: rgb(205, 234, 254);
+    border-radius: 10px;
+    box-shadow: 0px 12px 15px 1px gray;
+}
+
+/* text editing*/
+
+
+h1{
+    text-align: center;
+    font-family: ChicagoFLF;
+    padding: 10px;
+}
+
+p{
+    text-align: center;
+    font-family: ChildWriting;
+}
+
+
+.main_container{
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.objects{
+   flex: 50%; 
+   padding: 5px;
+   top: 80px;
+   right: 420px;
+   position: absolute;
+   bottom: -70px;
+}
+
+.ipod{ 
+    float: right;
+    margin-top: 80px;
+    margin-left: 50px;
+    rotate: -2deg;
+}
+
+.ipod_screen{
+rotate: 0.5deg;
+scale: 97%;
+transform: translate(45px, -492px);  
+}
+
+.ipod_text{
+font-family: ChicagoFLF;
+color: #1c0d48;
+position: relative;
+transform: translate(-50px, -110px);
+opacity: 60%;
+font-size: 14px;
+text-align: center;
+}
+
+.song_name{
+font-size: 17px;
+width: 100%;
+margin: 0 auto;
+white-space: nowrap;
+overflow: hidden;
+bottom: 0px;
+}
+
+.playlist_num{
+    font-size: 10px;
+    transform: translate(-120px, -190px);
+    position: relative;
+}
+
+.notepad{ 
+    float: left;
+    rotate: 3deg;
+}
+
+.notepad_text{ 
+font-family: ChildWriting;
+transform: translate(-0%, -600px);  
+color: #000000; 
+padding: 10px 80px; 
+font-size: 20px; 
+width: 360px;
+text-align: center;
+}
+
+.animation{
+    transform: translate(20px, -550px);
+}
+
+#audio-player{
+  width: 300px;
+  height: 40px;
+  border-radius: 15px;
+  position: relative;
+}
+
+#audio-player::after{
+  content: "";
+  background: url('vccp_internship_project/assets/ipod_button_no_effect.png') no-repeat;
+  display: block;
+  position: absolute;
+  margin-top: -8px;
+  margin-left: 270px;
+}
+
+
+#audio-play{
+    width: 70px;
+    height: 50px;
+    background: url() no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin: 5px;
+    /* margin-left: 15px; */
+    top: 126px;
+    right: 158px;
+    cursor: pointer !important;
+}
+
+
+
+#audio-bwd{
+    width: 50px;
+    height: 70px;
+    background: url(style.css?_cacheOverride=1773757275395) no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin: 5px;
+    /* margin-left: 0px; */
+    top: 34px;
+    right: 245px;
+    cursor: pointer !important;
+}
+
+#audio-fwd{
+    width: 50px;
+    height: 70px;
+    background: url(style.css?_cacheOverride=1773757441522) no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin: 5px;
+    top: 34px;
+    cursor: pointer !important;
+    left: 150px;
+}
+
+
+
+
+#progress{
+    position: relative;
+    margin: 8px;
+    left: -47px;
+    /* margin-left: 105px; */
+    top: -118px;
+}
+
+
+#audio-playbar{
+    border-radius: 0;
+    background: rgb(163, 163, 247);
+    opacity: 50%;
+    height: 10px;
+    position: relative;
+    top: -8px;
+    left: 58px;
+}
+
+
+progress[value]::-webkit-progress-bar {
+  background-color: #a176ea;
+  border-radius: 0;
+}
+
+progress[value]::-webkit-progress-value{
+  background: #1c0d48;
+}
+
+
+.paused{
+  background: url('vccp_internship_project/assets/ipod_button_play_shadow.png') no-repeat !important;
+  background-size: cover;
+}
+
+#audio-mute{
+  width: 30px;
+  height: 30px;
+  scale: 110%;
+  display: none;
+  position: relative;
+  margin: 0px;
+  z-index: 0;
+  margin: 5px;
+  top: -115px;
+  right: -305px;
+  background: url('/vccp_internship_project/assets/mute.png') no-repeat;
+  cursor: pointer !important;
+}
+
+
+#volume-control{
+  position: relative;
+  width: 200px;
+  margin: 5px;
+  display: block;
+  transform: translate(186px, -540px);
+  z-index: 12;
+}
+
+.credits{
+    width: 500px;
+    padding: 10px;
+    background-color: white;
+    font-size: 14pt;
+    border-width: 5px;
+    border-radius: 7px;
+    border-color: #000000;
+    text-align: left;
+    transform: translate(-130px, 950px);
+}
+
+.footer{
+    height: 50px;
+    width: 50px;
+    color: white;
+    transform: translate(-455px, 1500px);
+}
+
+.seperator{
+    font-family: ChicagoFLF;
+    color: white;
+    font-size: 18px;
+    text-shadow: #000000 3px 2px;
+    width: 300px;
+    padding: 0px;
+    transform: translate(325px, 750px);
+}
